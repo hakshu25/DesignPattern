@@ -43,3 +43,28 @@ $ ts-node ./typescript/**/main.ts
 - 暗黙の依存関係を生む
 - このクラスを外部から渡せなくなり、ユニットテストしづらい
 - マルチスレッドだとアクセスへのロックが必要
+
+## Template Method
+
+### 目的
+
+- 処理の枠組みを定める
+
+### クラス図
+
+![Template Method](https://github.com/flyhighair/DesignPattern/blob/feature/template_method/class_diagrams/template_method/template_method.png)
+
+### 仕様
+
+- スーパークラスの抽象クラスで処理の枠組みを決める
+- サブクラスで具体的な処理内容を定める
+- 共通メソッドは処理内容をスーパークラスで定義する
+- サブクラスに任せる処理はスーパークラスで抽象メソッドとして定義する
+
+### メリット
+
+- ロジックを複数クラスで共通化でき、バグ修正が容易になる
+
+### デメリット
+
+- クラスの数が余分に増えやすい
