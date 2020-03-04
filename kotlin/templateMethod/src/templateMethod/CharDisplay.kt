@@ -1,6 +1,6 @@
 package templateMethod
 
-class CharDisplay(val char: Char) : AbstractDisplay {
+class CharDisplay(private val char: Char) : AbstractDisplay() {
   override fun open() {
     print("<<")
   }
@@ -8,6 +8,6 @@ class CharDisplay(val char: Char) : AbstractDisplay {
     print(char)
   }
   override fun close() {
-    print(">>")
+    println(">>")
   }
 }
