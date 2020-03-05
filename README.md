@@ -25,7 +25,7 @@ $ yarn ts-node ./typescript/**/main.ts
 
 ### クラス図
 
-![Singleton](https://github.com/flyhighair/DesignPattern/blob/feature/singleton/class_diagrams/singleton/singleton.png)
+![Singleton](https://user-images.githubusercontent.com/32229790/75941235-7490a100-5ed2-11ea-8452-02d061bc6806.png)
 
 ### 仕様
 
@@ -52,7 +52,7 @@ $ yarn ts-node ./typescript/**/main.ts
 
 ### クラス図
 
-![Template Method](https://github.com/flyhighair/DesignPattern/blob/feature/template_method/class_diagrams/template_method/template_method.png)
+![Template Method](https://user-images.githubusercontent.com/32229790/75941317-a99cf380-5ed2-11ea-9048-eb9342a5472e.png)
 
 ### 仕様
 
