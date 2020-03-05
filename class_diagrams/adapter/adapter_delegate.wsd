@@ -1,0 +1,25 @@
+@startuml adapter_delegate
+
+title 委譲パターン
+
+abstract class Target {
+  targetMethod1()
+  targetMethod2()
+}
+
+class Adapter {
+  adaptee
+  targetMethod1()
+  targetMethod2()
+}
+
+class Adaptee {
+  methodA()
+  methodB()
+  methodC()
+}
+
+Target <|-- Adapter
+Adapter o-- Adaptee
+
+@enduml
