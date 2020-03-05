@@ -25,7 +25,7 @@ $ yarn ts-node ./typescript/**/main.ts
 
 ### クラス図
 
-![Singleton](https://github.com/flyhighair/DesignPattern/blob/feature/singleton/class_diagrams/singleton/singleton.png)
+![Singleton](https://user-images.githubusercontent.com/32229790/75941235-7490a100-5ed2-11ea-8452-02d061bc6806.png)
 
 ### 仕様
 
@@ -52,7 +52,7 @@ $ yarn ts-node ./typescript/**/main.ts
 
 ### クラス図
 
-![Template Method](https://github.com/flyhighair/DesignPattern/blob/feature/template_method/class_diagrams/template_method/template_method.png)
+![Template Method](https://user-images.githubusercontent.com/32229790/75941317-a99cf380-5ed2-11ea-9048-eb9342a5472e.png)
 
 ### 仕様
 
@@ -65,6 +65,21 @@ $ yarn ts-node ./typescript/**/main.ts
 
 - ロジックを複数クラスで共通化でき、バグ修正が容易になる
 
-### デメリット
+## Iterator
 
-- クラスの数が余分に増えやすい
+### 目的
+
+- 要素を順番にスキャンする処理を抽象化する
+
+### クラス図
+
+![Iterator](https://user-images.githubusercontent.com/32229790/75942601-34332200-5ed6-11ea-84a1-a969c5105575.png)
+
+### 仕様
+
+- 集約インターフェースがIteratorを生成する
+- Iteratorは次の要素が存在するかの判断と、次の要素の取得ができる
+
+### メリット
+
+- Iteratorを使う側の実装と切り離して数え上げを行うことができる
