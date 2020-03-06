@@ -83,3 +83,25 @@ $ yarn ts-node ./typescript/**/main.ts
 ### メリット
 
 - Iteratorを使う側の実装と切り離して数え上げを行うことができる
+
+## Adapter
+
+### 目的
+
+- 既存のものをそのまま流用できない時に必要な形で使えるようにする
+
+### クラス図
+
+![Adapter 委譲パターン](https://user-images.githubusercontent.com/32229790/75974969-09b78800-5f1b-11ea-97b8-c8091846659c.png)
+
+![Adapter 継承パターン](https://user-images.githubusercontent.com/32229790/75974985-0de3a580-5f1b-11ea-85a1-2d01a572dffc.png)
+
+### 仕様
+
+- 継承もしくは委譲で実現する
+- 既存のものをWrapする形のAPIを提供する
+
+### メリット
+
+- 既存のオブジェクトのAPIを変えずに新しいAPIに適合させることができる
+- ライブラリで使えば、古いバージョンと新しいバージョンを共存させられる
