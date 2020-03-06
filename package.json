@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "ts-node": "node_modules/ts-node/dist/bin.js"
+    "start": "node_modules/ts-node/dist/bin.js"
   },
   "dependencies": {
     "@types/node": "^11.10.4",
