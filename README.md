@@ -11,7 +11,7 @@
 ```bash
 $ cd DesignPattern
 $ yarn install
-$ yarn ts-node ./typescript/**/main.ts
+$ yarn start ./typescript/**/main.ts
 >Print any result
 ```
 
